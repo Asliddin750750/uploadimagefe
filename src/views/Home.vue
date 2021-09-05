@@ -1,17 +1,14 @@
 <template>
   <div class="home">
-    <table>
-      <tr>
-        <th>Nomi</th>
-        <th>Poytaxti</th>
-        <th>Aholisi</th>
-      </tr>
-      <tr v-for="c in countries" :key="c.id">
-        <td>{{ c.nomi }}</td>
-        <td>{{ c.poytaxti }}</td>
-        <td>{{ c.aholisi }}</td>
-      </tr>
-    </table>
+    <div class="p-grid">
+      <div class="p-col-12 p-lg-6 p-lg-offset-3">
+        <DataTable :value="countries" responsiveLayout="scroll">
+          <Column field="nomi" header="Nomi"/>
+          <Column field="poytaxti" header="Poytaxti"/>
+          <Column field="aholisi" header="Aholisi"/>
+        </DataTable>
+      </div>
+    </div>
   </div>
 </template>
 
