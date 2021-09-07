@@ -4,6 +4,10 @@ import axios from "axios";
 
 axios.defaults.baseURL = process.env.baseURL || process.env.apiUrl || '/api/';
 
+let token = localStorage.getItem('token')
+if(token) {
+    axios.defaults.headers.common['Authorization'] = `Token ${token}`;
+}
 
 let config = {
   // baseURL: process.env.baseURL || process.env.apiUrl || "/api/"
