@@ -1,10 +1,11 @@
 <template>
   <div class="home">
-    <div class="p-grid">
+    <div class="p-grid p-nogutter">
       <div class="p-col-12 p-lg-6 p-lg-offset-3">
         <Button label="Logout" @click="onLogout" class="p-button-danger p-ml-auto p-my-2"/>
       </div>
       <div class="p-col-12 p-lg-6 p-lg-offset-3">
+        <h2 class="text-success">Davlatlar</h2>
         <DataTable :value="countries" responsiveLayout="scroll">
           <Column field="nomi" header="Nomi"/>
           <Column field="poytaxti" header="Poytaxti"/>

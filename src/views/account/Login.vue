@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <div class="p-grid p-px-6">
+    <div class="p-grid p-px-6 p-pt-3 p-nogutter">
       <div class="p-col-12 p-lg-6 p-lg-offset-3">
         <Panel>
           <template #header>

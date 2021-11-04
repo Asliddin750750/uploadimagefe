@@ -3,7 +3,18 @@
 @import "~primeicons/primeicons.css";
 @import '~primeflex/primeflex.css';
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 // Primevuedagi stylega o'zgartirish kiritish uchun
 
 // Global style yozish uchun
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', 'sans-serif';
+  scroll-behavior: smooth;
+}
+
+.text-success {
+  color: #198754;
+}
