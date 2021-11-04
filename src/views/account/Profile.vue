@@ -8,21 +8,17 @@
           </template>
           <form @submit.stop.prevent="onUpdate">
             <div class="p-fluid">
-              <div class="p-field p-grid">
-                <label class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">First name</label>
-                <div class="p-col-12 p-md-10">
-                  <InputText v-model="form.first_name"/>
-                </div>
+              <div class="p-field">
+                <label class="p-text-bold">First name</label>
+                <InputText v-model="form.first_name"/>
               </div>
-              <div class="p-field p-grid">
-                <label class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Last name</label>
-                <div class="p-col-12 p-md-10">
-                  <InputText v-model="form.last_name"/>
-                </div>
+              <div class="p-field">
+                <label class="p-text-bold">Last name</label>
+                <InputText v-model="form.last_name"/>
               </div>
             </div>
             <div class="p-d-flex">
-              <Button label="Update" type="submit" class="p-ml-auto"/>
+              <Button label="Update" type="submit" class="p-ml-auto p-text-bold"/>
             </div>
           </form>
         </Panel>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="p-grid p-nogutter">
+    <div class="p-grid p-px-6 p-pt-3 p-nogutter">
       <div class="p-col-12 p-lg-6 p-lg-offset-3">
         <Button label="Logout" @click="onLogout" class="p-button-danger p-ml-auto p-my-2"/>
       </div>
