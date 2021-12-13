@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <div class="p-d-flex p-jc-center">
+      <Button label="Upload image" @click="$router.push({name: 'upload.image'})" class="p-m-2"/>
+      <Button label="View images" @click="$router.push({name: 'view.images'})" class="p-m-2"/>
+    </div>
     <div class="p-grid">
       <div class="p-col-12 p-lg-6 p-lg-offset-3">
         <DataTable :value="countries" responsiveLayout="scroll">
